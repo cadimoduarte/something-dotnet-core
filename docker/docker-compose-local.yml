@@ -1,0 +1,37 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:9.6
+    hostname: postgres
+    domainname: app-domain
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=exampledb
+      - POSTGRES_USER=exampleuser
+      - POSTGRES_PASSWORD=examplepassword
+    volumes:
+      - ./local-database-config.sql:/docker-entrypoint-initdb.d/setup.sql
+    networks:
+      - something-nextwork
+
+  webapi:
+    image: somethingwebapi:latest
+    hostname: somethingwebapi
+    domainname: app-domain
+    ports:
+      - "5580:80"
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Username=exampleuser;Password=examplepassword;Database=exampledb;
+    networks:
+      - something-nextwork
+    depends_on:
+      - postgres
+
+networks:
+  something-nextwork:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.163.252.0/16

@@ -1,0 +1,3 @@
+docker-compose -f docker-compose-local.yml up -d
+set /p DUMMY=Hit ENTER to continue...
+docker-compose -f docker-compose-local.yml down

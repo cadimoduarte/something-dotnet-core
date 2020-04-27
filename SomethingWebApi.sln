@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SomethingWebApi", "SomethingWebApi.csproj", "{F5C1B22E-A84C-414B-A99C-99241F30951C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1255C6B0-651B-4104-A368-BB62811D95E5}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{54CCBDCC-CDF8-4E4D-9003-ABDFD50C7089}"
+	ProjectSection(SolutionItems) = preProject
+		docker\docker-compose-local.yml = docker\docker-compose-local.yml
+		Dockerfile = Dockerfile
+		docker\local-database-config.sql = docker\local-database-config.sql
+		docker\setup.bat = docker\setup.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5C1B22E-A84C-414B-A99C-99241F30951C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C1B22E-A84C-414B-A99C-99241F30951C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C1B22E-A84C-414B-A99C-99241F30951C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C1B22E-A84C-414B-A99C-99241F30951C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{54CCBDCC-CDF8-4E4D-9003-ABDFD50C7089} = {1255C6B0-651B-4104-A368-BB62811D95E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCFCB487-B146-4163-92A0-5FCF6238BA30}
+	EndGlobalSection
+EndGlobal

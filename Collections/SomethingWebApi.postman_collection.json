@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "101de0fb-690e-4f78-8885-bf5fa08ade49",
+		"name": "SomethingWebApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"maria\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5580/something",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5580",
+					"path": [
+						"something"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5580/something",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5580",
+					"path": [
+						"something"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
