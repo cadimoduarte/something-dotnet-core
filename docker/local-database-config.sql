@@ -1,0 +1,8 @@
+CREATE SCHEMA IF NOT EXISTS example;
+
+GRANT ALL PRIVILEGES ON SCHEMA example TO GROUP exampleuser;
+
+CREATE TABLE IF NOT EXISTS example.something (
+   id SERIAL PRIMARY KEY,
+   name VARCHAR NOT NULL
+);
